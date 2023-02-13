@@ -1,0 +1,10 @@
+Number of user turns: 13442  
+Number of system turns: 13442
+Total number of dialogues: 1232
+Total number of turns: 26884
+Total number of words: 180946
+Total number of vocab words: 332
+Mean of words in turn: 6.7306204433864005
+STD pf words in turn: 4.753565264901919
+Mean of turns in dialogue: 21.816409423233143
+STD of turns in dialogue: 6.160756579555394
