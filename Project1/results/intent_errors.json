@@ -1,0 +1,10 @@
+[
+  {
+    "text": "another question",
+    "intent": "new_query",
+    "intent_prediction": {
+      "name": "ask_different_link",
+      "confidence": 0.3380494713783264
+    }
+  }
+]

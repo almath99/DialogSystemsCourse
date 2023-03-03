@@ -1,0 +1,154 @@
+version: "3.1"
+nlu:
+- intent: request_sign_up
+  examples: |
+    - I want to sign up
+    - I want to create an account
+    - I want to become a user
+    - Can I create an account?
+- intent: new_query
+  examples: |
+    - I want to ask something else
+    - I want to continue
+    - I want another recommendation
+    - continue
+    - can I ask something else?
+    - I have another question
+- intent: goodbye
+  examples: |
+    - have a nice day
+    - good by
+    - cu
+    - good night
+    - cee you later
+    - goodbye
+    - bye
+    - see you later
+- intent: thank
+  examples: |
+    - thanks man
+    - thank you man
+    - nice
+    - cool
+    - great
+    - you saved me
+    - that's great
+    - thank you
+- intent: ask_movie_recommendation
+  examples: |
+    - can you recommend me a movie?
+    - I want a movie recommendation
+    - a movie
+    - a movie recommendation
+    - I want to watch a movie
+    - movie recommendation
+    - recommend me a movie to watch
+    - can you tell me a movie to watch?
+    - i want a new movie recommendation
+- intent: ask_different_link
+  examples: |
+    - I want another link
+    - another recommendation?
+    - give me a second link
+    - another one?
+    - I want a second link
+    - a second link?
+    - can you give me a second link?
+    - is there another link?
+    - is there another movie site?
+- intent: ask_music_recommendation
+  examples: |
+    - I need new music
+    - i want a new music recommendation
+    - music recommendation
+    - Can you recommend me a song to listen to?
+    - a song recommendation
+    - I want to listen to some music
+    - music
+    - recommend me some music
+    - Can you recommend me some music to listen to?
+    - I want to listen to new music
+    - a music recommendation
+- intent: affirm
+  examples: |
+    - that sounds good
+    - correct
+    - sure
+    - yes, I like that
+    - I like that
+    - ok
+    - yeah
+    - of course
+    - ok, thanks
+    - y
+    - indeed
+- intent: greet
+  examples: |
+    - hey bot
+    - good afternoon
+    - morning
+    - goodevening
+    - hello there
+    - hi there
+    - hello
+    - good morning
+    - hey there
+    - hey
+    - hey dude
+    - hi bot
+    - goodmorning
+    - hi
+- intent: deny
+  examples: |
+    - I don't like that
+    - already watched that
+    - no way
+    - don't like that
+    - can you recommend me something else?
+    - I've already listened to it
+    - i hate this movie
+    - not really
+    - n
+    - nah
+    - no
+    - I've already watched that
+    - no new recommendation
+    - no, something else?
+    - I don't think so
+- intent: music_genre
+  examples: |
+    - [kpop](music_genre)
+    - [alternative](music_genre)
+    - [rap](music_genre)
+    - [indie](music_genre)
+    - [rock](music_genre)
+    - [r&b](music_genre)
+    - [punk](music_genre)
+    - [symphonic metal](music_genre)
+    - [alternative pop](music_genre)
+    - [pop](music_genre)
+    - [heavye metal](music_genre)
+    - [alternative rock](music_genre)
+    - [hip-hop](music_genre)
+    - [jpop](music_genre)
+- intent: movie_genre
+  examples: |
+    - [romantic](movie_genre)
+    - i want something [classic](movie_genre)
+    - something with [action](movie_genre)
+    - i want to watch something [funny](movie_genre)
+    - [romcom](movie_genre)
+    - something that i can watch [with friends](movie_genre)
+    - [action](movie_genre)
+    - [horror](movie_genre)
+    - [thriller](movie_genre)
+    - [fantasy](movie_genre)
+    - [documentary](movie_genre)
+    - [Haloween](movie_genre)
+    - [crime](movie_genre)
+    - [adventure](movie_genre)
+    - [family](movie_genre)
+    - [Christmas](movie_genre)
+    - a [japanese](movie_genre) movie
+    - [musical](movie_genre)
+    - a [korean](movie_genre) movie

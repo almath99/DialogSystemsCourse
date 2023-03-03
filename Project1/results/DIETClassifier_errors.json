@@ -1,0 +1,23 @@
+[
+  {
+    "text": "something that i can watch with friends",
+    "entities": [
+      {
+        "start": 27,
+        "end": 39,
+        "value": "with friends",
+        "entity": "movie_genre"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_genre",
+        "start": 32,
+        "end": 39,
+        "confidence_entity": 0.9726216793060303,
+        "value": "friends",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

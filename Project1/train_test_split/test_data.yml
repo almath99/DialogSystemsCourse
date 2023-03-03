@@ -1,0 +1,58 @@
+version: "3.1"
+nlu:
+- intent: request_sign_up
+  examples: |
+    - I would like to create an account
+- intent: new_query
+  examples: |
+    - Can I continue
+    - another question
+- intent: goodbye
+  examples: |
+    - see you around
+    - bye bye
+- intent: thank
+  examples: |
+    - thank you so much
+    - thanks
+- intent: ask_movie_recommendation
+  examples: |
+    - wanna watch a movie
+    - movie
+- intent: ask_different_link
+  examples: |
+    - give me another link
+    - a second recommendation?
+    - can you give me another link?
+- intent: ask_music_recommendation
+  examples: |
+    - an album recommendation
+    - I want to listen to a new album
+- intent: affirm
+  examples: |
+    - k
+    - yes
+    - okay
+- intent: greet
+  examples: |
+    - moin
+    - yo
+    - let's go
+    - good evening
+- intent: deny
+  examples: |
+    - already listened to it
+    - nope
+    - never
+- intent: music_genre
+  examples: |
+    - [metal](music_genre)
+    - [pop-rock](music_genre)
+    - [country](music_genre)
+    - [black metal](music_genre)
+- intent: movie_genre
+  examples: |
+    - [sci-fi](movie_genre)
+    - [drama](movie_genre)
+    - something with [zombies](movie_genre)
+    - [comedy](movie_genre)

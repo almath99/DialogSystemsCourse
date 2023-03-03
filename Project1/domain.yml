@@ -1,0 +1,108 @@
+version: '3.1'
+
+intents:
+- affirm
+- ask_different_link
+- ask_movie_recommendation
+- deny
+- goodbye
+- greet
+- movie_genre
+- request_sign_up
+- thank
+
+forms:
+  sign_up_form:
+    required_slots:
+    - name
+    - email
+
+
+entities:
+- movie_genre
+
+slots:
+  
+  name:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: sign_up_form
+        requested_slot: name
+ 
+  email:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: sign_up_form
+        requested_slot: email
+  
+  movie_genre:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: movie_genre
+      actions: utter_movie_genre
+
+
+responses:
+  utter_greet:
+  - text: Hey! How can I help you?
+  utter_goodbye:
+  - text: Have fun! Bye!
+  utter_continue:
+  - text: Do you have any other question?
+  utter_signup:
+  - text: You chose to sign up.
+  utter_movie_recommendation_path:
+  - text: You chose the movie recommendation path.
+  utter_second_recommendation:
+  - text: I will make another recommendation then.
+  - text: I'm sorry, I'll try an make another recommendation.
+  utter_intention:
+  - text: I will give you a link, where you can look for a movie to watch.
+  utter_link:
+  - text: https://www.imdb.com/list/ls031037940/
+  utter_second_link:
+  - text: https://www.nytimes.com/article/best-movies-netflix.html
+  utter_movie_genre:
+  - text: What movie genre do you like?
+  utter_ask_name:
+  - text: Could you please provide your name?
+  utter_ask_email:
+  - text: Could you please provide your email?
+  utter_aknowledge_info:
+  - text: Thanks {name}!
+  utter_check:
+  - text: Do you like this recommendation?
+
+actions:
+- '...'
+- action_confirm_movie_genre
+- action_make_movie_recommendation
+- movie_recommendation_form
+- utter_aknowledge_info
+- utter_ask_email
+- utter_ask_name
+- utter_check
+- utter_continue
+- utter_goodbye
+- utter_greet
+- utter_intention
+- utter_link
+- utter_movie_genre
+- utter_movie_recommendation
+- utter_second_recommendation
+- utter_movie_recommendation_path
+- utter_second_link
+- utter_signup
+- action_restart
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
